@@ -1,0 +1,15 @@
+[Unit]
+Description=Plate Recognition Flask Application
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/plate_recognition
+Environment="PATH=/opt/plate_recognition/venv/bin"
+ExecStart=/opt/plate_recognition/venv/bin/gunicorn --config gunicorn_config.py app_advanced:app
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

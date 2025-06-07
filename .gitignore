@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+uploads/
+results/
+test_images/
+test_vehicles/
+*.db
+*.log
+app.log
+nohup.out
+
+# Model files
+*.pt
+*.pth
+*.onnx
+*.pb
+*.h5
+*.weights
+
+# Data files
+*.csv
+*.json
+detection_metrics.json
+performance_chart.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp_*
+
+# Large files
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar.gz
